@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Sep, 2012 10:14:26 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="beans.Item" table="ITEM_CBO">
+        <id name="name" type="java.lang.String">
+            <column name="ITEM_NAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="barcode" type="int">
+            <column name="ITEM_BARCODE" />
+        </property>
+        <property name="style" type="java.lang.String">
+            <column name="ITEM_STYLE" />
+        </property>
+        <property name="color" type="java.lang.String">
+            <column name="ITEM_COLOR" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="season" type="java.lang.String">
+            <column name="ITEM_SEASON" />
+        </property>
+        <property name="seasonYear" type="int">
+            <column name="ITEM_SEASON_YEAR" />
+        </property>
+        <property name="quality" type="java.lang.String">
+            <column name="ITEM_QUALITY" />
+        </property>
+        <property name="unitWeight" type="double">
+            <column name="UNIT_WEIGHT" />
+        </property>
+        <property name="unitVolume" type="double">
+            <column name="UNIT_VOLUME" />
+        </property>
+        <property name="commodityLevelDesc" type="java.lang.String">
+            <column name="COMMODITY_LEVEL_DESC" />
+        </property>
+        <property name="uRL" type="java.lang.String">
+            <column name="URL" />
+        </property>
+    </class>
+</hibernate-mapping>
