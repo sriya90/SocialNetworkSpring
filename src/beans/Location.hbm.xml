@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Sep, 2012 10:06:36 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="beans.Location" table="LOCN_HDR">
+        <id name="dspLocn" type="java.lang.String">
+            <column name="DSP_LOCN" />
+            <generator class="assigned" />
+        </id>
+        <property name="locationBarcode" type="int">
+            <column name="LOCATION_BARCODE" />
+        </property>
+        <property name="locnClass" type="java.lang.String">
+            <column name="LOCN_CLASS" />
+        </property>
+        <property name="locnPickSeq" type="java.lang.String">
+            <column name="LOCN_PICK_SEQ" />
+        </property>
+        <property name="area" type="java.lang.String">
+            <column name="AREA" />
+        </property>
+        <property name="zone" type="java.lang.String">
+            <column name="ZONE" />
+        </property>
+        <property name="aisle" type="java.lang.String">
+            <column name="AISLE" />
+        </property>
+        <property name="bay" type="java.lang.String">
+            <column name="BAY" />
+        </property>
+        <property name="lvl" type="java.lang.String">
+            <column name="LVL" />
+        </property>
+    </class>
+</hibernate-mapping>
